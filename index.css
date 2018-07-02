@@ -885,20 +885,14 @@ header {
 .coffee h3,
 .coffee2h h3 {
     color: #a7a22f;
-    margin: 50px 0 0 0;
+    margin: 25px 0 0 0;
     padding: 0 0 30px 0;
-
 }
 
 .coffee p,
 .coffee2h p {
     color: #000000;
     padding: 0px 50px;
-}
-
-.coffee .details h3 {
-    postion: relative;
-    width: 100%;
 }
 
 .coffee .details {
@@ -913,8 +907,16 @@ header {
     font-size: 1.5vw;
 }
 
-.coffee2h .details p{
+.coffee2h .details p {
     font-size: 1.5vw;
+}
+
+.coffee .details h3 {
+    font-size: 2vw;
+}
+
+.coffee2h .details h3 {
+    font-size: 2vw;
 }
 
 /*
@@ -962,15 +964,15 @@ header {
         margin-top: 2%;
         margin-left: 2%;
     }
-    
-    .coffee-holder2 .coffee2h .coffeeimg{
+
+    .coffee-holder2 .coffee2h .coffeeimg {
         height: 100%;
     }
 
     .coffee-holder2 .coffee2h:nth-of-type(2) {
         transform: translate(50%);
         margin-top: -2%;
-        
+
     }
 
     .clearfix:after {
@@ -1058,7 +1060,7 @@ header {
     filter: blur(0px) brightness(100%);
 }
 
-@media (max-width: 1056px){
+@media (max-width: 1056px) {
     #sections-container {
         display: block;
     }
@@ -1477,11 +1479,19 @@ header {
     .coffee h3,
     .coffee2h h3 {
         color: #a7a22f;
-        margin: 10px 0 0 0;
+        margin: 10px 0 25px 0;
         padding: 0px 0px 0px 0px;
     }
-    
-    .coffee h3{
+
+    .coffee .details h3 {
+        font-size: 5vw;
+    }
+
+    .coffee2h .details h3 {
+        font-size: 5vw;
+    }
+
+    .coffee h3 {
         padding: 0px 0px 0px 0px;
     }
 
