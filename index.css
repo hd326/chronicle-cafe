@@ -817,6 +817,7 @@ header {
     transition: .5s;
 }
 
+
 .coffee .coffeeimg {
     top: 0;
     left: 0;
@@ -837,9 +838,6 @@ header {
     top: 0;
     left: 0;
 }
-
-
-
 
 
 /* scalable coffee */
@@ -864,6 +862,7 @@ header {
 }
 
 .coffee2h .details {
+    background-color: rgb(255, 255, 255);
     top: 0;
     left: 100%;
 }
@@ -914,6 +913,10 @@ header {
     font-size: 1.5vw;
 }
 
+.coffee2h .details p{
+    font-size: 1.5vw;
+}
+
 /*
 .details-liner {
     content: "";
@@ -958,6 +961,10 @@ header {
         float: left;
         margin-top: 2%;
         margin-left: 2%;
+    }
+    
+    .coffee-holder2 .coffee2h .coffeeimg{
+        height: 100%;
     }
 
     .coffee-holder2 .coffee2h:nth-of-type(2) {
