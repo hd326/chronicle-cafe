@@ -1,0 +1,537 @@
+<?php 
+$action = filter_input(input_post, 'action');
+if ($action == NULL) {
+    $action = filter_input(input_get, 'action');
+    if $action == NULL {
+        $action = 'main';
+    }
+}
+
+if ($action == 'main'){
+    include('index.php');
+} else if ($action == 'login'){
+    include('login.php');
+}
+?>
+
+
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index2.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|Arvo|Josefin+Slab|Lato|Old+Standard+TT|Open+Sans|PT+Sans|PT+Serif|Roboto|Ubuntu|Vollkorn|Dancing+Script|Tangerine|Lato|Slabo 27px|Merriweather|Roboto Mono|Berkshire Swash|Audiowide|Megrim|Sancreek|Arbutus">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <title>Chronicles | Welcome</title>
+    
+</head>
+
+<body onload="Load()">
+    <div class="side-bar-menu" id="side-bar">
+
+        <div class="side-nav" id="side-menu">
+            <a href="#" class="btn-style" id="btn-close">&times;</a>
+            <a id="our-stores" href="#">OUR STORES<span class="fa fa-angle-right"></span></a>
+            <a id="shop" href="#">SHOP<span class="fa fa-angle-right"></span></a>
+            <a id="story" href="#">OUR STORY<span class="fa fa-angle-right"></span></a>
+            <a id="join" href="#">JOIN THE CHRONICLE<span class="fa fa-angle-right"></span></a>
+        </div>
+        <div class="side-nav-ours" id="side-menu">
+            <a href="#" class="btn-style" id="btn-close2">&times;</a>
+            <a id="account" href="#"><span class="fa fa-user"></span>MY ACCOUNT</a>
+            <a id="back" href="#"><span class="fa fa-angle-left"></span>BACK</a>
+            <a href="#">San Francisco</a>
+            <a href="#">Los Angeles</a>
+            <a href="#">Washington D.C.</a>
+        </div>
+        <div class="side-nav-shop" id="side-menu">
+            <a href="#" class="btn-style" id="btn-close3">&times;</a>
+            <a id="account" href="#"><span class="fa fa-user"></span>MY ACCOUNT</a>
+            <a id="back2" href="#"><span class="fa fa-angle-left"></span>BACK</a>
+            <a href="#">Browse Shop</a>
+            <a id="coffee" href="#">Coffee<span class="fa fa-angle-right"></span></a>
+            <a href="#">Tea & Flavors</a>
+            <a href="#">Gift Cards</a>
+            <a href="#">Collectibles</a>
+            <a href="#">Subscribe</a>
+        </div>
+        <div class="side-nav-coffee" id="side-menu">
+            <a href="#" class="btn-style" id="btn-close4">&times;</a>
+            <a id="account" href="#"><span class="fa fa-user"></span>MY ACCOUNT</a>
+            <a id="back3" href="#"><span class="fa fa-angle-left"></span>BACK</a>
+            <a href="#">Browse Coffee</a>
+            <a href="#">Dark Blends</a>
+            <a href="#">Medium Blends</a>
+            <a href="#">Lighter Blends</a>
+            <a href="#">Decaf</a>
+            <a href="#">Exclusive</a>
+        </div>
+        <div class="side-nav-story" id="side-menu">
+            <a href="#" class="btn-style" id="btn-close5">&times;</a>
+            <a id="account" href="#"><span class="fa fa-user"></span>MY ACCOUNT</a>
+            <a id="back4" href="#"><span class="fa fa-angle-left"></span>BACK</a>
+            <a href="#">Coffee</a>
+            <a href="#">Simple Ingredients</a>
+            <a href="#">How We Brew</a>
+            <a href="#">Our Menu</a>
+        </div>
+        <div class="side-nav-join" id="side-menu">
+            <a href="#" class="btn-style" id="btn-close6">&times;</a>
+            <a id="account" href="#"><span class="fa fa-user"></span>MY ACCOUNT</a>
+            <a id="back5" href="#"><span class="fa fa-angle-left"></span>BACK</a>
+            <a href="#">Coffee Mondays</a>
+            <a href="#">Special Tuesdays</a>
+            <a href="#">Food Wednesdays</a>
+            <a href="#">Herbal Thursdays</a>
+        </div>
+
+
+    </div>
+
+    <div class="container-header">
+        <div class="header-wrap">
+            <header>
+
+                <nav class="logo">
+                    <ul>
+                        <li>
+
+                        </li>
+                        <li><span id="coffee-mug" class="fa fa-coffee fa-4x"><div class="icon">
+                                <div class="hamburger"></div>
+                            </div></span><span id="logo-name"><span id=m-logo>C</span>hronicle Cafe</span>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="header-links">
+                    <nav class="links">
+                        <ul class="menu-liner">
+                            <li class="main-menu">
+                                <a id="our-stores" href=#>
+                                    <p>OUR STORES</p>
+                                </a>
+                                <ul>
+                                    <li><a href=#>San Francisco</a></li>
+                                    <li><a href=#>Los Angeles</a></li>
+                                    <li><a href=#>Washington D.C.</a></li>
+                                </ul>
+                            </li>
+                            <li class="main-menu">
+                                <a href=#>
+                                    <p>SHOP</p>
+                                </a>
+                                <ul>
+                                    <li><a href=#>Coffee</a></li>
+                                    <li><a href=#>Tea & Spices</a></li>
+                                    <li><a href=#>Gift Cards</a></li>
+                                    <li><a href=#>Merchandise</a></li>
+                                    <li><a href=#>Subscriptions</a></li>
+                                </ul>
+                            </li>
+                            <li class="main-menu">
+                                <a href=#>
+                                    <p>OUR STORY</p>
+                                </a>
+                                <ul>
+                                    <li><a href=#>Our Coffee</a></li>
+                                    <li><a href=#>Brew Guide</a></li>
+                                    <li><a href=#>Store Menu</a></li>
+                                </ul>
+                            </li>
+                            <li class="main-menu">
+                                <a href=#>
+                                    <p>JOIN US</p>
+                                </a>
+                                <ul>
+
+                                    <li><a href=#>Coffee Mondays</a></li>
+                                    <li><a href=#>Special Tuesdays</a></li>
+                                    <li><a href=#>Food Wednesdays</a></li>
+                                    <li><a href=#>Herbal Thursdays</a></li>
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <nav class=side-links>
+                    <ul>
+                        <li><span id="side-links-icon" class="fa fa-shopping-cart fa-1x"></span><span id="side-links-text">(0)</span></li>
+                        <li><span id="side-links-icon" class="fa fa-user fa-1x"></span><span id="side-links-text">My Account</span></li>
+                        <li><span id="side-links-icon" class="fa fa-envelope fa-1x"></span><span id="side-links-text">Contact Us</span></li>
+                    </ul>
+                </nav>
+
+            </header>
+        </div>
+    </div>
+    <div class="photo-wrap">
+       <!--
+        <img class=slider src="images/env.jpg">
+        <img class=slider src="images/env1.jpg">
+        <img class=slider src="images/env2.jpg">
+        -->
+        <div id="Img3" class="main-photo" src="images/env2.jpg"></div>
+        <div id="Img2" class="main-photo" src="images/env1.jpg"></div>
+        <div id="Img1" class="main-photo" src="images/env.jpg"></div>
+        
+        
+        <button class="btn" onclick="prev()" id="btn-1">&#10094;</button>
+        <button class="btn" onclick="next()" id="btn-2">&#10095;</button>
+    </div>
+
+    <section id="locations-sec">
+        <div class="container">
+            <div class="container-section">
+                <div class="section-text"><span>LOCATIONS</span>
+                </div>
+
+            </div>
+            <div class="text-ad">OPERATING LOCATIONS</div>
+
+            <div class="cities">
+
+                <div class="cities-img"><img src="images/sfcity.jpg"></div>
+                <div class="cities-text">
+                    <h3>SF</h3>
+                    <p>San Francisco</p>
+                </div>
+
+            </div>
+
+            <div class="cities">
+
+                <div class="cities-img"><img src="images/l.a"></div>
+                <div class="cities-text">
+                    <h3>LA</h3>
+                    <p>Los Angeles</p>
+                </div>
+            </div>
+
+            <div class="cities">
+
+                <div class="cities-img"><img src="images/was.jpg"></div>
+                <div class="cities-text">
+                    <h3>DC</h3>
+                    <p>Washington D.C.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="shopping">
+        <div class="container">
+            <div class="container-section">
+                <div class="section-text"><span>SHOPPING</span>
+                </div>
+            </div>
+            <div class="text-ad2">FIND THE BREW FOR YOU</div>
+        </div>
+        <div class=coffee>
+
+            <div class=coffeeimg><img src="images/coffeel4.jpg"></div>
+
+        <a href="lightblends.php">
+            <div class="details">
+                <h3>Light Blends</h3>
+                <div class="details-liner"></div>
+                <p>Light roasts are light brown in color, with a light body and no oil on the surface of the beans. Light roasts have a toasted grain taste and pronounced acidity.</p>
+            </div>
+        </a>
+        </div>
+
+
+        <div class=coffee>
+            <div class="coffeeimg"><img src="images/coffeel2.jpeg"></div>
+            <div class="details">
+                <h3>Dark Blends</h3>
+                <div class="details-liner"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus molestie erat vel posuere pulvinar. Fusce commodo sollicitudin nisi, et laoreet felis. </p>
+            </div>
+        </div>
+        <div class=coffee>
+            <div class="coffeeimg"><img src="images/coffeel1.jpeg"></div>
+            <div class="details">
+                <h3>Medium Blends</h3>
+                <div class="details-liner"></div>
+                <p>Medium roasted coffees are medium brown in color with more body than light roasts. Like the lighter roasts, they have no oil on the bean surfaces. </p>
+            </div>
+        </div>
+
+
+        <div class="coffee2h">
+            <div class=coffee2>
+                <div class="coffeeimg"><img src="images/coffeel3.jpg"></div>
+                <div class="details">
+                    <h3>Decaf</h3>
+                    <div class="details-liner"></div>
+                    <p>We blend coffees to bring you flavors, textures, and overall characteristics of coffee that are simply unobtainable with a single origin coffee.</p>
+                </div>
+            </div>
+            <div class=coffee2>
+                <div class="coffeeimg"><img src="images/coffeel.jpeg"></div>
+                <div class="details">
+                    <h3>Single Origin</h3>
+                    <div class="details-liner"></div>
+                    <p>Single origin is a small phrase with a big definition. The meaning’s often simplified to a coffee that’s sourced from one single producer, crop, or region in one country.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="news">
+        <div class=container>
+            <div class="container-section">
+                <div class=section-text><span>NEWS AND EVENTS</span>
+
+                </div>
+            </div>
+            <div class="text-ad3">GET TO KNOW US</div>
+
+            <div class=sections><img src="images/coffeeb.jpg">
+                <div class=sections-text1>
+                    <h3>OUR COFFEE</h3>
+                </div>
+            </div>
+            <div class=sections><img src="images/coffeeb1.jpg">
+                <div class=sections-text2>
+                    <h3>OUR STORY</h3>
+                </div>
+            </div>
+            <div class=sections><img src="images/coffeeb2.jpg">
+                <div class=sections-text3>
+                    <h3>OUR CRAFT</h3>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class=footer>
+        <div class=footer-left>
+            <h3>SIGN UP FOR THE LATEST FROM MIRACLES!</h3>
+            <p>We'll keep you updated on all our special events and promotions.</p>
+            <form><input class="sub-box" type="text" placeholder="Enter your email to sign up...">
+                <button type="submit" id="button">SUBSCRIBE</button>
+                <button type="submit" id="button1">+</button>
+
+            </form>
+        </div>
+
+        <div class="footer-links">
+            <nav>
+                <ul>
+                    <a href=#>
+                        <li>WHOLESALE</li>
+                    </a>
+                    <a href=#>
+                        <li>PRESS</li>
+                    </a>
+                    <a href=#>
+                        <li>TERMS & POLICY</li>
+                    </a>
+                    <a href=#>
+                        <li>SITE MAP</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="footer-social">
+            <h3>JOIN US</h3>
+            <a href=#><span class="fa fa-facebook"></span></a>
+            <a href=#><span class="fa fa-twitter"></span></a>
+            <a href=#><span class="fa fa-instagram"></span></a>
+            <a href=#><span class="fa fa-linkedin"></span></a>
+            <a href=#><span class="fa fa-pinterest"></span></a>
+            <a href=#><span class="fa fa-google"></span></a>
+            <a href=#>
+                <h3>LEAVE US FEEDBACK!</h3>
+            </a>
+        </div>
+    </div>
+
+    <!-- jQuery Stuff -->
+
+    <script src="jquery-3.2.1.js"></script>
+
+    <script>
+        $(function() {
+            $(".icon").click(function() {
+                $(".side-bar-menu").fadeIn().css("z-index", 3);
+            });
+
+            $("#btn-close").click(function() {
+                $(".side-bar-menu").fadeOut(0).css("z-index", 0);
+            });
+
+            $("#btn-close2").click(function() {
+                $(".side-bar-menu").fadeOut(0).css("z-index", -10);
+            });
+
+            $("#btn-close3").click(function() {
+                $(".side-bar-menu").fadeOut(0).css("z-index", 0);
+            });
+
+            $("#btn-close4").click(function() {
+                $(".side-bar-menu").fadeOut(0).css("z-index", 0);
+            });
+
+            $("#btn-close5").click(function() {
+                $(".side-bar-menu").fadeOut(0).css("z-index", 0);
+            });
+
+            $("#btn-close6").click(function() {
+                $(".side-bar-menu").fadeOut(0).css("z-index", 0);
+            });
+
+            $('#back').click(function() {
+                $('.side-nav-ours').fadeOut();
+                $('.side-nav').fadeToggle().css("z-index", 10);
+            });
+
+            $('#back2').click(function() {
+                $('.side-nav-shop').fadeOut();
+                $('.side-nav').fadeToggle().css("z-index", 10);
+            });
+
+            $('#back3').click(function() {
+                $('.side-nav-coffee').fadeOut();
+                $('.side-nav-shop').fadeIn();
+            });
+
+            $('#back4').click(function() {
+                $('.side-nav-story').fadeOut();
+                $('.side-nav').fadeIn();
+            });
+
+            $('#back5').click(function() {
+                $('.side-nav-join').fadeOut();
+                $('.side-nav').fadeIn();
+            });
+
+            $('#our-stores').click(function() {
+                $('.side-nav').fadeOut();
+                $('.side-nav-ours').fadeIn().css("z-index", 10);
+            });
+
+            $('#shop').click(function() {
+                $('.side-nav').fadeOut();
+                $('.side-nav-shop').fadeToggle();
+            });
+
+            $('#coffee').click(function() {
+                $('.side-nav-coffee').fadeIn().css("z-index", 10);
+                $('.side-nav-shop').fadeOut();
+            });
+
+            $('#story').click(function() {
+                $('.side-nav').fadeOut();
+                $('.side-nav-story').fadeIn().css('z-index', 10);
+            });
+
+            $('#join').click(function() {
+                $('.side-nav').fadeOut();
+                $('.side-nav-join').fadeIn().css('z-index', 10);
+            });
+
+        });
+    </script>
+
+    <!-- jQuery -->
+
+    <!-- JavaScript -->
+    
+    <script type="text/javascript">
+    var Img = 3;
+    var Seconds = 4;
+       
+       function Load(){
+           Shown = 0;
+           Vector = new Array;
+           Vector[0] = document.getElementById("Img1");
+           Vector[0].style.visibility = "visible";
+           for (var i = 1; i < Img; i++) {
+               Vector[i] = document.getElementById("Img" + (i + 1));
+           }
+       }
+       
+       function next(){
+           Shown++;
+           if (Shown == Img) 
+               Shown = 0;
+           Effect();
+       }
+       
+       function prev(){
+           Shown--;
+           if (Shown == -1) 
+               Shown = Img -1;
+           Effect();
+       }
+       
+       function Effect(){
+           for (var i = 0; i < Img; i++) {
+               Vector[i].style.opacity = "0";
+               Vector[i].style.visibility = "hidden";
+           }
+           Vector[Shown].style.opacity = "1";
+           Vector[Shown].style.visibility = "visible";
+       }
+    </script>
+    
+  <!--
+    <script>
+         
+        var index = 1;
+
+        function slideImage(n) {
+            index = index + n;
+            slider(index);
+            effect(index);
+        }
+
+        slider(1);
+        effect(1);
+
+        function slider(n) {
+            var x = document.getElementsByClassName('slider');
+            var i;
+            for (i = 0; i < x.length; i++) {
+                if (n < 1) {
+                    index = x.length;
+                }
+                if (n > 3) {
+                    index = 1;
+                }
+                x[i].style.display = "none";
+            }
+            x[index - 1].style.display = "block";
+        }
+
+        function effect() {
+            var x = document.getElementsByClassName('slider');
+            var i;
+            for (i = 0; i < x.length; i++) {
+                x[i].style.opacity = "0";
+                x[i].style.visibility = "hidden";
+            }
+            x[index - 1].style.opacity = "1";
+            x[index - 1].style.visibility = "visible";
+        }
+        
+        
+    </script>
+-->
+   
+    <!-- JavaScript Stuff -->
+
+</body>
+
+</html>
